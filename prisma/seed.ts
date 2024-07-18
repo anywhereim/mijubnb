@@ -100,6 +100,13 @@ async function seedRooms() {
   }
 }
 
+async function testQuery() {
+  const result = await prisma.room.findMany();
+  console.log(result);
+}
+
+testQuery();
+
 //랜던 위도
 function getRandomLatitude() {
   const minLatitude = 37.4316;
