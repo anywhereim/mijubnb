@@ -17,12 +17,13 @@ datasource db {
 //유저는 여러개의 룸 데이터를 가질 수 있음
 //룸데이터를 만들어 유저가 룸데이터를 가질 수 있도록 관계정의를 해주면 된다.
 model User {
-  id                      String        @id @default(uuid())
+  id                      Int           @id @default(autoincrement())
   email                   String        @unique
   name                    String?
   image                   String?
   desc                    String?
   rooms                   Room[]
+
 }
 
 model Room {
@@ -46,7 +47,7 @@ model Room {
   hasWifi                 Boolean       @default(false)
   hasBarbeque             Boolean       @default(false)
   hasFreeParking          Boolean       @default(false)
-  userId                  String        
-  user                    User          @relation(fields: [userId], references: [id], onDelete: Cascade) 
+  userId                  Int?        
+  user                    User?          @relation(fields: [userId], references: [id], onDelete: Cascade) 
 @@index([userId])
 }

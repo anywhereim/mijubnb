@@ -1,6 +1,6 @@
 -- CreateTable
 CREATE TABLE "User" (
-    "id" TEXT NOT NULL,
+    "id" INTEGER NOT NULL,
     "email" TEXT NOT NULL,
     "name" TEXT,
     "image" TEXT,
@@ -31,7 +31,7 @@ CREATE TABLE "Room" (
     "hasWifi" BOOLEAN NOT NULL DEFAULT false,
     "hasBarbeque" BOOLEAN NOT NULL DEFAULT false,
     "hasFreeParking" BOOLEAN NOT NULL DEFAULT false,
-    "userId" TEXT NOT NULL,
+    "userId" INTEGER,
 
     CONSTRAINT "Room_pkey" PRIMARY KEY ("id")
 );
