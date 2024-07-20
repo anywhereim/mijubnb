@@ -1,22 +1,22 @@
-import { PrismaClient } from "@prisma/client";
-import { fakerKO as faker } from "@faker-js/faker";
+import { PrismaClient } from '@prisma/client';
+import { fakerKO as faker } from '@faker-js/faker';
 
 const prisma = new PrismaClient();
 const CATEGORY = [
-  "전망좋은",
-  "자연",
-  "동굴",
-  "캠핑장",
-  "방",
-  "한옥",
-  "해변",
-  "국립공원",
-  "수영장",
-  "통나무집",
-  "스키",
-  "호수",
-  "키즈",
-  "섬",
+  '전망좋은',
+  '자연',
+  '동굴',
+  '캠핑장',
+  '방',
+  '한옥',
+  '해변',
+  '국립공원',
+  '수영장',
+  '통나무집',
+  '스키',
+  '호수',
+  '키즈',
+  '섬',
 ];
 
 async function seedUsers() {
@@ -46,22 +46,22 @@ async function seedRooms() {
         title: faker.lorem.words(),
         images: [
           faker.image.urlLoremFlickr({
-            category: "hotel",
+            category: 'hotel',
             width: 500,
             height: 500,
           }),
           faker.image.urlLoremFlickr({
-            category: "travel",
+            category: 'travel',
             width: 500,
             height: 500,
           }),
           faker.image.urlLoremFlickr({
-            category: "nature",
+            category: 'nature',
             width: 500,
             height: 500,
           }),
           faker.image.urlLoremFlickr({
-            category: "building",
+            category: 'building',
             width: 500,
             height: 500,
           }),
@@ -77,7 +77,7 @@ async function seedRooms() {
         desc: faker.lorem.paragraphs(),
         category: CATEGORY[Math.floor(Math.random() * CATEGORY.length)],
         price: parseInt(
-          faker.commerce.price({ min: 50000, max: 500000, dec: 0 })
+          faker.commerce.price({ min: 50000, max: 500000, dec: 0 }),
         ),
         bedroomDesc: faker.lorem.words(),
         freeCancel: faker.datatype.boolean(),

@@ -1,6 +1,6 @@
-import { ReactNode } from "react";
+import { ReactNode } from 'react';
 
-export type DetailFilterType = "location" | "checkIn" | "checkOut" | "guest";
+export type DetailFilterType = 'location' | 'checkIn' | 'checkOut' | 'guest';
 
 export interface FilterProps {
   location: string;
@@ -136,7 +136,7 @@ export interface BookingType {
   guestCount: number;
   totalAmount: number;
   totalDays: number;
-  status: "SUCCESS" | "CANCEL";
+  status: 'SUCCESS' | 'CANCEL';
   room: RoomType;
   user: UserType;
   createAt: string;
@@ -145,14 +145,14 @@ export interface BookingType {
 }
 
 export enum PaymentStatus {
-  READY = "READY",
-  IN_PROGRESS = "IN_PROGRESS",
-  WAITING_FOR_DEPOSIT = "WAITING_FOR_DEPOSIT",
-  DONE = "DONE",
-  CANCELED = "CANCELED",
-  PARTIAL_CANCELED = "PARTIAL_CANCELED",
-  ABORTED = "ABORTED",
-  EXPIRED = "EXPIRED",
+  READY = 'READY',
+  IN_PROGRESS = 'IN_PROGRESS',
+  WAITING_FOR_DEPOSIT = 'WAITING_FOR_DEPOSIT',
+  DONE = 'DONE',
+  CANCELED = 'CANCELED',
+  PARTIAL_CANCELED = 'PARTIAL_CANCELED',
+  ABORTED = 'ABORTED',
+  EXPIRED = 'EXPIRED',
 }
 
 export interface PaymentType {

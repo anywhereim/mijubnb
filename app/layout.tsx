@@ -1,13 +1,13 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
-import MijuLayout from "./provider";
+import type { Metadata } from 'next';
+import { Inter } from 'next/font/google';
+import './globals.css';
+import MijuLayout from './provider';
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: "Mijubnb로 캠핑가기",
-  description: "Mijubnb로 캠핑을 계획해보세요",
+  title: 'Mijubnb로 캠핑가기',
+  description: 'Mijubnb로 캠핑을 계획해보세요',
 };
 
 export default function RootLayout({

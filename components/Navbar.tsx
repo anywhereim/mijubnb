@@ -1,17 +1,17 @@
-"use client";
+'use client';
 
-import { GiCampingTent } from "react-icons/gi";
-import { RxDividerVertical } from "react-icons/rx";
-import { IoSearch } from "react-icons/io5";
-import { GiHamburgerMenu } from "react-icons/gi";
-import { AiOutlineUser } from "react-icons/ai";
-import { useRouter } from "next/navigation";
-import { useState } from "react";
+import { GiCampingTent } from 'react-icons/gi';
+import { RxDividerVertical } from 'react-icons/rx';
+import { IoSearch } from 'react-icons/io5';
+import { GiHamburgerMenu } from 'react-icons/gi';
+import { AiOutlineUser } from 'react-icons/ai';
+import { useRouter } from 'next/navigation';
+import { useState } from 'react';
 
 const menus = [
-  { id: 1, title: "로그인", url: "/users/login" },
-  { id: 2, title: "회원가입", url: "/users/signup" },
-  { id: 3, title: "FAQ", url: "/faqs" },
+  { id: 1, title: '로그인', url: '/users/login' },
+  { id: 2, title: '회원가입', url: '/users/signup' },
+  { id: 3, title: 'FAQ', url: '/faqs' },
 ];
 
 export default function Navbar() {

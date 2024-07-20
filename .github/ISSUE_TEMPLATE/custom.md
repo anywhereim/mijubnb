@@ -1,8 +1,8 @@
 ---
 name: Custom issue template
-about: "[이슈 타입] - 이슈 설명"
-title: ""
-labels: ""
+about: '[이슈 타입] - 이슈 설명'
+title: ''
+labels: ''
 assignees: anywhereim
 ---
 
